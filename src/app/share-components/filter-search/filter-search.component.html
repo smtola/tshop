@@ -1,0 +1,12 @@
+<nz-input-group [nzSuffix]="suffixIconSearch" style="margin: 1rem 0;">
+  <input
+    nz-input
+    [(ngModel)]="value"
+    placeholder="Search..."
+    (keyup.enter)="filterTextChanged()"
+  >
+</nz-input-group>
+
+<ng-template #suffixIconSearch>
+  <span nz-icon nzType="search"></span>
+</ng-template>
